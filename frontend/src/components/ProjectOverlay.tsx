@@ -6,6 +6,7 @@ interface Project {
   tags: string[];
   image?: string;
   url?: string;
+  liveUrl?: string;
   techStack?: string[]; // <-- make optional
 }
 
@@ -44,7 +45,7 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
             project.image
               ? new URL(
                   `../assets/images/projects/${project.image}`,
-                  import.meta.url
+                  import.meta.url,
                 ).href
               : ""
           }
@@ -104,7 +105,7 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
                   >
                 | null
                 | undefined,
-              i: any
+              i: any,
             ) => (
               <span
                 key={`tech-${i}`}
@@ -112,20 +113,32 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
               >
                 {tech}
               </span>
-            )
+            ),
           )}
 
-          {/* GitHub Button */}
-          {project.url && (
-            <div className="mt-[8%]">
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="box-shadow hover cv-button font-medium"
-              >
-                View on GitHub
-              </a>
+          {/* Action Buttons */}
+          {(project.url || project.liveUrl) && (
+            <div className="mt-[8%] flex flex-wrap gap-3">
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="box-shadow hover cv-button font-medium"
+                >
+                  View on GitHub
+                </a>
+              )}
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="box-shadow hover cv-button font-medium"
+                >
+                  View Live
+                </a>
+              )}
             </div>
           )}
         </div>

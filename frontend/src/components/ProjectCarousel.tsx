@@ -12,6 +12,7 @@ interface Project {
   tags: string[];
   image?: string;
   url?: string;
+  liveUrl?: string;
   techStack?: string[];
 }
 
