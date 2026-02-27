@@ -7,6 +7,7 @@ interface Project {
   image?: string;
   url?: string;
   liveUrl?: string;
+  VideoDemo?: string;
   techStack?: string[]; // <-- make optional
 }
 
@@ -137,6 +138,16 @@ const ProjectOverlay: React.FC<ProjectOverlayProps> = ({
                   className="box-shadow hover cv-button font-medium"
                 >
                   View Live
+                </a>
+              )}
+              {project.VideoDemo && (
+                <a
+                  href={project.VideoDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="box-shadow hover cv-button font-medium"
+                >
+                  Video Demo
                 </a>
               )}
             </div>

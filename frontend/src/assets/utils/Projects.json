@@ -37,8 +37,9 @@
     "image": "5.png",
     "tags": ["Web"],
     "techStack": ["HTML", "CSS", "JavaScript", "React", "OharaAI"],
+    "VideoDemo" : "https://www.youtube.com/watch?v=iU_4q-pavV0",
     "url": "https://github.com/itzjmbruhhh/ArcadeHub",
-    "liveUrl": "https://ohara.ai/mini-apps/dbe753f9-968c-42a9-87c5-6489a630345e"
+    "liveUrl": "https://arcade-hub-pink.vercel.app/"
   },
   {
     "title": "AI-Powered Admission System - NU Lipa",
@@ -62,5 +63,23 @@
     "tags": ["All", "Web", "Mobile"],
     "techStack": ["React", "Django", "Python", "Tailwind", "TypeScript"],
     "url": "https://github.com/itzjmbruhhh/Peek-A-Book"
+  },
+  {
+    "title": "BarakoSense",
+    "description": "BarakoSense: Coffee Liberica Authenticity Classifier BarakoSense is a specialized web application designed to preserve and promote the heritage of Batangas coffee through artificial intelligence. Developed as a landmark thesis project, it serves as a digital gatekeeper for the authenticity of Coffea liberica—locally known as Barako. By leveraging machine learning, BarakoSense provides farmers, researchers, and coffee enthusiasts with a reliable tool to distinguish genuine Liberica from other coffee varieties, ensuring the integrity of the 'Barako' brand.",
+    "image": "8.png",
+    "tags": ["All", "Web", "Mobile"],
+    "techStack": ["HTML", "CSS", "JavaScript", "Google Cloud Platform", "Docker"],
+    "liveUrl" : "https://barakosense-484055099685.asia-southeast1.run.app/",
+    "url": "https://github.com/kylajamito/BarakoSense"
+  },
+  {
+    "title": "Locate.io",
+    "description": "A modern, full-stack IP geolocation web application built with React and Vite. Search and visualize IP address locations worldwide with an interactive map interface, search history management, and sleek terminal-inspired UI.",
+    "image": "9.png",
+    "tags": ["All", "Web", "Mobile"],
+    "techStack": ["React", "Node.js", "MongoDB", "JavaScript", "Vercel"],
+    "liveUrl" : "https://geo-webapp-frontend.vercel.app/",
+    "url": "https://github.com/itzjmbruhhh/geo-webapp-frontend"
   }
 ]
