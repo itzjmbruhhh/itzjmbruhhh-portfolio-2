@@ -6,7 +6,7 @@ function HomeLeft() {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const cvLink = new URL(
     `../assets/files/${homeData.cv_directory}`,
-    import.meta.url
+    import.meta.url,
   ).href;
 
   const handleCopyEmail = () => {
@@ -64,12 +64,11 @@ function HomeLeft() {
               <button className="box-shadow hover cv-button font-medium">
                 <a
                   href={cvLink}
-                  download
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full h-full block"
                 >
-                  DOWNLOAD CV
+                  VIEW RÉSUMÉ
                 </a>
               </button>
               <button
