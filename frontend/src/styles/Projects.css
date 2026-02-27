@@ -18,7 +18,9 @@
 .custom-swiper .swiper-button-next:hover,
 .custom-swiper .swiper-button-prev:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 12px var(--color-primary), 0 0 25px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 12px var(--color-primary),
+    0 0 25px rgba(255, 255, 255, 0.1);
 }
 
 /* Smaller arrow icons centered */
@@ -73,26 +75,33 @@
 }
 
 .box-shadow-proj {
-  @apply p-8 md:mx-5 md:min-h-[500px] xl:mx-5 xl:min-h-[500px] border border-transparent rounded-[20px] transform;
-  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.04),
+  @apply p-8 md:mx-5 min-h-[500px] xl:mx-5 border border-transparent rounded-[20px] transform;
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.04),
     6px 6px 12px rgba(0, 0, 0, 0.2);
   background: var(--background-color-1);
-  transition: background-color 0.6s ease-in-out, box-shadow 0.4s ease-in-out,
+  transition:
+    background-color 0.6s ease-in-out,
+    box-shadow 0.4s ease-in-out,
     transform 0.3s ease;
 }
 
 .box-shadow-proj:hover {
   background: var(--background-color-1-5-2);
-  box-shadow: -8px -8px 14px rgba(255, 255, 255, 0.05),
+  box-shadow:
+    -8px -8px 14px rgba(255, 255, 255, 0.05),
     8px 8px 14px rgba(0, 0, 0, 0.35);
 }
 
 .box-shadow-proj-overlay {
   @apply border-transparent rounded-[20px] transform w-[95%] md:w-[70%] xl:w-[70%] mt-10 md:mt-0 xl:mt-0 text-center relative shadow-lg md:flex xl:flex p-10 gap-10;
-  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.1),
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.1),
     6px 6px 12px rgba(255, 255, 255, 0.1);
   background: var(--background-color-1);
-  transition: background-color 0.6s ease-in-out, box-shadow 0.4s ease-in-out,
+  transition:
+    background-color 0.6s ease-in-out,
+    box-shadow 0.4s ease-in-out,
     transform 0.3s ease;
 }
 
@@ -105,19 +114,22 @@ html.light {
   }
 
   .box-shadow-proj {
-    box-shadow: 0 12px 28px rgba(16, 24, 40, 0.07),
+    box-shadow:
+      0 12px 28px rgba(16, 24, 40, 0.07),
       0 4px 12px rgba(16, 24, 40, 0.05);
     background: var(--background-color-1);
   }
 
   .box-shadow-proj:hover {
-    box-shadow: 0 20px 44px rgba(16, 24, 40, 0.1),
+    box-shadow:
+      0 20px 44px rgba(16, 24, 40, 0.1),
       0 6px 20px rgba(16, 24, 40, 0.07);
     background: var(--background-color-1-5);
   }
 
   .box-shadow-proj-overlay {
-    box-shadow: 0 14px 36px rgba(16, 24, 40, 0.08),
+    box-shadow:
+      0 14px 36px rgba(16, 24, 40, 0.08),
       0 6px 18px rgba(16, 24, 40, 0.05);
     background: var(--background-color-1);
   }

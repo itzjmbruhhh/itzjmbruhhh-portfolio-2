@@ -51,7 +51,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
             <div
-              className="project-card box-shadow-proj cursor-pointer group transition-all duration-300 p-4 sm:p-5 md:p-6 xl:p-7 rounded-xl"
+              className="project-card box-shadow-proj cursor-pointer group transition-all duration-300 p-4 sm:p-5 md:p-6 xl:p-7 rounded-xl h-full"
               onClick={() => onProjectSelect(project)}
             >
               <div className="overflow-hidden rounded-[10px] mb-5">
@@ -60,7 +60,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                     project.image
                       ? new URL(
                           `../assets/images/projects/${project.image}`,
-                          import.meta.url
+                          import.meta.url,
                         ).href
                       : ""
                   }
@@ -86,7 +86,9 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                 </h1>
 
                 <p className="text-(--color-body-2) text-[15px] md:text-[16px]">
-                  {project.description}
+                  {project.description.length > 10
+                    ? project.description.slice(0, 100) + "..."
+                    : project.description}
                 </p>
               </div>
             </div>
